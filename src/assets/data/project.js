@@ -24,15 +24,7 @@ export const projectApi = [
         githubLink: 'https://github.com/Manoj554/youtube-clone',
         url: 'https://youtube-clone-by-manoj.vercel.app'
     },
-    {
-        id: 3,
-        projectName: 'CartAny - ECommerce',
-        techStack: 'Next.js | custom css | Express.js | MongoDB  | redux | json-web-token',
-        image: cartAnyBg.src,
-        description: 'This is a complete E-commerce website, Here the seller can upload their products and can manage their orders, and a user can search, filter, products can put those in wishlist and also in cart and later on user can placed their orders.',
-        githubLink: 'https://github.com/Manoj554/E-commerce-client',
-        url: 'https://cartany.vercel.app'
-    },
+    
     {
         id: 4,
         projectName: 'Portfolio website',
@@ -42,4 +34,14 @@ export const projectApi = [
         githubLink: 'https://github.com/Manoj554/My-Portfolio',
         url: 'https://manojkumarmondal.vercel.app'
     },
+
+    // {
+    //     id: 3,
+    //     projectName: 'CartAny - ECommerce',
+    //     techStack: 'Next.js | custom css | Express.js | MongoDB  | redux | json-web-token',
+    //     image: cartAnyBg.src,
+    //     description: 'This is a complete E-commerce website, Here the seller can upload their products and can manage their orders, and a user can search, filter, products can put those in wishlist and also in cart and later on user can placed their orders.',
+    //     githubLink: 'https://github.com/Manoj554/E-commerce-client',
+    //     url: 'https://cartany.vercel.app'
+    // },
 ]

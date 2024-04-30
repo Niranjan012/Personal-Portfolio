@@ -18,7 +18,7 @@ const Project = () => {
     return (
         <>
             <Head>
-                <title>Manoj Kumar Mondal | Projects </title>
+                <title>Niranjan Panigrahi | Projects </title>
             </Head>
             <section className='w-full relative top-0'>
                 <div className='absolute-0 top-0 w-full h-[90vh] opacity-70'>

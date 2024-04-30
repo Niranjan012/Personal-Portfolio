@@ -13,7 +13,7 @@ const Projects = () => {
                     {projectApi.map(val => <ProjectBox projectName={val.projectName} image={val.image} techStack={val.techStack} id={val.id} key={val.id} link={val.url} />)}
                 </div>
                 <div>
-                    <a href="https://manojkumarmondal.vercel.app" target="_blank" rel="noreferrer" >
+                    <a href="https://niranjanpanigrahi.vercel.app" target="_blank" rel="noreferrer" >
                         <button className='git-button'>Explore Other Projects</button>
                     </a>
                 </div>

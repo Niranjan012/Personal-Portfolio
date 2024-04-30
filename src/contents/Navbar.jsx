@@ -25,7 +25,7 @@ const Navbar = () => {
                     <div>
                         <FaCode className='text-3xl text-blue-700' />
                     </div>
-                    <h1 className='text-xl xs:text-2xl'>Manoj Kumar Mondal</h1>
+                    <h1 className='text-xl xs:text-2xl'>Niranjan Panigrahi</h1>
                 </div>
                 <div className='md:hidden flex items-center space-x-6'>
                     <div onClick={handleThemeClick} className='cursor-pointer'>

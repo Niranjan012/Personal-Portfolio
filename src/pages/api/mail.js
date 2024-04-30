@@ -17,7 +17,7 @@ const sendMail = async (text) => {
             service: 'gmail',
             auth: {
                 type: 'OAuth2',
-                user: 'manojkumarmondal554@gmail.com',
+                user: 'mrniranjanwork@gmail.com',
                 clientId: CLIENT_ID,
                 clientSecret: CLIENT_SECRETE,
                 accessToken: accessToken,
@@ -26,8 +26,8 @@ const sendMail = async (text) => {
         });
 
         const mailOption = {
-            from: 'PortFolio - Manoj Kumar Mondal <manojmondal.vercel.app>',
-            to: 'thisismanojmondal@gmail.com',
+            from: 'PortFolio - Niranjan Panigrahi <niranjanpanigrahi.vercel.app>',
+            to: 'mrniranjanwork@gmail.com',
             subject: 'Someone sent you a message',
             text: text,
             html: text

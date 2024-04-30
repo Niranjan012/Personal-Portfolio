@@ -1,81 +1,70 @@
-import { FaJava, FaCss3, FaHtml5, FaReact, FaCode } from 'react-icons/fa';
-import { SiJavascript, SiFirebase, SiMongodb, SiMaterialui, SiTailwindcss, SiNodedotjs, SiTypescript, SiNextdotjs, SiRedux } from 'react-icons/si';
+import { FaJava, FaCss3, FaHtml5, FaReact, FaCode, FaSwift, FaDatabase } from 'react-icons/fa';
+import { SiJavascript, SiFirebase, SiMongodb, SiMaterialui, SiTailwindcss, SiNodedotjs, SiTypescript, SiNextdotjs, SiRedux, SiHibernate, SiSpringboot, SiPython } from 'react-icons/si';
 import { MdSystemUpdateAlt } from 'react-icons/md';
 
 export const skillsApi = [
     {
         id: 1,
-        name: "Next.Js",
-        icon: <SiNextdotjs />
-    },
-    {
-        id: 2,
-        name: "React.Js",
-        icon: <FaReact />
-    },
-    {
-        id: 3,
-        name: "Tailwind",
-        icon: <SiTailwindcss />
-    },
-    {
-        id: 4,
-        name: "Redux",
-        icon: <SiRedux />
-    },
-    {
-        id: 5,
-        name: "HTML5",
-        icon: <FaHtml5 />
-    },
-    {
-        id: 6,
-        name: "CSS3",
-        icon: <FaCss3 />
-    },
-    {
-        id: 7,
-        name: "JavaScript",
-        icon: <SiJavascript />
-    },
-    {
-        id: 8,
-        name: "TypeScript",
-        icon: <SiTypescript />
-    },
-    {
-        id: 9,
-        name: "Node.Js",
-        icon: <SiNodedotjs />
-    },
-    {
-        id: 10,
-        name: "MongoDB",
-        icon: <SiMongodb />
-    },
-    {
-        id: 11,
-        name: "Firebase",
-        icon: <SiFirebase />
-    },
-    {
-        id: 12,
-        name: "Material UI",
-        icon: <SiMaterialui />
-    },
-    {
-        id: 13,
         name: "Java",
         icon: <FaJava />
     },
     {
-        id: 14,
-        name: "C",
-        icon: <FaCode />
+        id: 2,
+        name: "Springboot",
+        icon: <SiSpringboot />
+        
     },
     {
-        id: 15,
-        name: "System Programming",
-        icon: <MdSystemUpdateAlt />
+        id: 3,
+        name: "Hibernate",
+        icon: <SiHibernate />
     },
+    {
+        id: 4,
+        name: "Python",
+        icon: <SiPython />
+    },
+    {
+        id: 5,
+        name: "Swift",
+        icon: <FaSwift />
+        
+    },
+    
+    {
+        id: 6,
+        name: "HTML5",
+        icon: <FaHtml5 />
+    },
+    {
+        id: 7,
+        name: "CSS3",
+        icon: <FaCss3 />
+    },
+    {
+        id: 8,
+        name: "JavaScript",
+        icon: <SiJavascript />
+    },
+    {
+        id: 9,
+        name: "TypeScript",
+        icon: <SiTypescript />
+    },
+    {
+        id: 10,
+        name: "React JS",
+        icon: <FaReact />
+    },
+    {
+        id: 11,
+        name: "MongoDB",
+        icon: <SiMongodb />
+    },
+    {
+        id: 12,
+        name: "MySQL",
+        icon: <FaDatabase />
+    },
+
 ]

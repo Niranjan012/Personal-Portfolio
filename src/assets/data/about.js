@@ -1,5 +1,3 @@
 export const aboutData = [
-    "I recently completed my bachelor&#39;s degree in electrical & electronics engineering from IIIT bhubaneswar. I am a full stack developer with tech stack MERN, and I prefer next.js and tailwind css for building beautiful user interfaces, and node.js, mongoDB for the backend or server side programming.",
-
-    "I believe I have the ability to deliver createive, high-quality web applications using MERN and JavaScript based tools.",
+    "A passionate and dedicated Software Developer with a strong foundation in full stack development and mobile application development(iOS), backed by 1+ year of professional experience. . I recently graduated with Masters of Computer Applications(MCA) from KIIT University, where I honed my skills in software development and problem-solving.During my studies,I developed a keen interest in web development, particularly in creating interactive and user-friendly interfaces. I have hands-on experience with technologies such as Swift,Python and I am eager to leverage my skills to create innovative and impactful solutions. I am constantly seeking opportunities to learn and grow in the field of software development, and I am excited about the prospect of contributing to dynamic and forward-thinking projects."
 ];

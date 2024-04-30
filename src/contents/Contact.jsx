@@ -19,13 +19,13 @@ const Contact = () => {
                             className='w-full h-60 rounded-lg'
                         />
                     </div>
-                    <h3 className='mt-6 font-bold text-2xl xs:text-3xl'>Manoj Kumar Mondal</h3>
+                    <h3 className='mt-6 font-bold text-2xl xs:text-3xl'>Niranjan Panigrahi</h3>
                     <p className='font-normal text-base mt-3'>I&#39;m currently looking for any new opportunities and to explore.</p>
 
                     <div className='mt-10 lg:mt-0 lg:absolute lg:bottom-8'>
                         <h1 className='text-2xl font-bold mb-3'>Reach out to me !!!</h1>
-                        <h3 className='mb-2'>Email: <span className='text-gray-500'><a href="mailto: thisismanojmondal@gmail.com">thisismanojmondal@gmail.com</a></span></h3>
-                        <h3 className='mb-2'>Phone: <span className='text-gray-500'><a href="tel: +91814467288">+91 8144607288</a></span></h3>
+                        <h3 className='mb-2'>Email: <span className='text-gray-500'><a href="mailto: mrniranjanwork@gmail.com">mrniranjanwork@gmail.com</a></span></h3>
+                        <h3 className='mb-2'>Phone: <span className='text-gray-500'><a href="tel: +916370181005">+91 6370181005</a></span></h3>
 
                         <ContactSocialMedia />
                     </div>
