@@ -6,24 +6,24 @@ import cartAnyBg from '../images/projectpics/cartany.png';
 
 
 export const projectApi = [
-    {
-        id: 1,
-        projectName: 'WhatsApp Clone',
-        techStack: 'Next.js | Tailwind css | Firebase | Socket.io',
-        image: whatsAppBg.src,
-        description: 'This is a real time chat application, where user can connect by login and can do one to one private chat or group chat. this web app is made using Next.js (react framework) for frontend, Tailwind css for creating awesome UI, React context api for global state managemnt, Google Firebase for authenticate user.',
-        githubLink: 'https://github.com/Manoj554/whatsapp-clone',
-        url: 'https://whatsapp-clone-manoj.vercel.app'
-    },
-    {
-        id: 2,
-        projectName: 'YouTube Clone',
-        techStack: 'Next.js | Tailwind css | TypeScript | youtube api',
-        image: youtubeBg.src,
-        description: 'This is clone of youtube web app. It is made by using Next.js, Tailwind css, TypeScript is used for better development experience and youtube api provided by google for the videos which actually a real time data.',
-        githubLink: 'https://github.com/Manoj554/youtube-clone',
-        url: 'https://youtube-clone-by-manoj.vercel.app'
-    },
+    // {
+    //     id: 1,
+    //     projectName: 'WhatsApp Clone',
+    //     techStack: 'Next.js | Tailwind css | Firebase | Socket.io',
+    //     image: whatsAppBg.src,
+    //     description: 'This is a real time chat application, where user can connect by login and can do one to one private chat or group chat. this web app is made using Next.js (react framework) for frontend, Tailwind css for creating awesome UI, React context api for global state managemnt, Google Firebase for authenticate user.',
+    //     githubLink: 'https://github.com/Manoj554/whatsapp-clone',
+    //     url: 'https://whatsapp-clone-manoj.vercel.app'
+    // },
+    // {
+    //     id: 2,
+    //     projectName: 'YouTube Clone',
+    //     techStack: 'Next.js | Tailwind css | TypeScript | youtube api',
+    //     image: youtubeBg.src,
+    //     description: 'This is clone of youtube web app. It is made by using Next.js, Tailwind css, TypeScript is used for better development experience and youtube api provided by google for the videos which actually a real time data.',
+    //     githubLink: 'https://github.com/Manoj554/youtube-clone',
+    //     url: 'https://youtube-clone-by-manoj.vercel.app'
+    // },
     
     {
         id: 4,
