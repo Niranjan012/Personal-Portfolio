@@ -1,8 +1,8 @@
-## Portfolio - Manoj Kumar Mondal
+## Portfolio - Niranjan Panigrahi
 
 This is my portfolio website built using Next.js and deployed on vercel.
 
-Visit [`https://manojmondal.vercel.app`](https://manojmondal.vercel.app) to see the results.
+Visit [`https://niranjan-panigrahi.vercel.app/`](https://niranjan-panigrahi.vercel.app/) to see the results.
 
 #or
 
