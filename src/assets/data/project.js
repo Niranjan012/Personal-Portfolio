@@ -31,8 +31,8 @@ export const projectApi = [
         techStack: 'React | styled-component |  mongoDb | custom-css',
         image: portfolioBg.src,
         description: 'This is my previous portfolio website. please visit this website for explore more projects.',
-        githubLink: 'https://github.com/Manoj554/My-Portfolio',
-        url: 'https://manojkumarmondal.vercel.app'
+        githubLink: 'https://github.com/Niranjan012',
+        url: 'https://niranjan-panigrahi.vercel.app/'
     }
 
     // {

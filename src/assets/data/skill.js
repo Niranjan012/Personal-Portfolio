@@ -66,5 +66,10 @@ export const skillsApi = [
         name: "MySQL",
         icon: <FaDatabase />
     },
+    {
+        id: 13,
+        name: "Firebase",
+        icon: <SiFirebase />
+    },
 
 ]
