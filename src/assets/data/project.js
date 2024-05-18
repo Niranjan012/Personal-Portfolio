@@ -1,8 +1,8 @@
-import whatsAppBg from '../images/projectpics/whatsapp.png';
-import youtubeBg from '../images/projectpics/youtube.png';
+// import whatsAppBg from '../images/projectpics/whatsapp.png';
+// import youtubeBg from '../images/projectpics/youtube.png';
 import portfolioBg from '../images/projectpics/portfolio.png';
 // import netflixBg from '../images/projectpics/netflix.png';
-import cartAnyBg from '../images/projectpics/cartany.png';
+// import cartAnyBg from '../images/projectpics/cartany.png';
 
 
 export const projectApi = [
@@ -33,7 +33,7 @@ export const projectApi = [
         description: 'This is my previous portfolio website. please visit this website for explore more projects.',
         githubLink: 'https://github.com/Manoj554/My-Portfolio',
         url: 'https://manojkumarmondal.vercel.app'
-    },
+    }
 
     // {
     //     id: 3,
