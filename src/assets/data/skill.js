@@ -30,7 +30,6 @@ export const skillsApi = [
         icon: <FaSwift />
         
     },
-    
     {
         id: 6,
         name: "HTML5",
@@ -43,31 +42,36 @@ export const skillsApi = [
     },
     {
         id: 8,
+        name: "TailwindCSS",
+        icon: <SiTailwindcss />
+    },
+    {
+        id: 9,
         name: "JavaScript",
         icon: <SiJavascript />
     },
     {
-        id: 9,
+        id: 10,
         name: "TypeScript",
         icon: <SiTypescript />
     },
     {
-        id: 10,
+        id: 11,
         name: "React JS",
         icon: <FaReact />
     },
     {
-        id: 11,
+        id: 12,
         name: "MongoDB",
         icon: <SiMongodb />
     },
     {
-        id: 12,
+        id: 13,
         name: "MySQL",
         icon: <FaDatabase />
     },
     {
-        id: 13,
+        id: 14,
         name: "Firebase",
         icon: <SiFirebase />
     },
