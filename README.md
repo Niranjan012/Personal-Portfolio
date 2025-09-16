@@ -15,6 +15,9 @@ This repository contains the source code for a portfolio website built using Nex
 ## Table of Contents
 
 - [Portfolio Website with Next.js and Sass](#portfolio-website-with-nextjs-and-sass)
+
+
+
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Screenshots](#screenshots)
@@ -151,21 +154,21 @@ Thank you for considering sponsoring my work!
 
 ## Connect With Me
 
-[![GitHub: nixrajput](https://img.shields.io/badge/nixrajput-EFF7F6?logo=GitHub&logoColor=333&link=https://www.github.com/nixrajput)][github]
-[![Linkedin: nixrajput](https://img.shields.io/badge/nixrajput-EFF7F6?logo=LinkedIn&logoColor=blue&link=https://www.linkedin.com/in/nixrajput)][linkedin]
-[![Instagram: nixrajput](https://img.shields.io/badge/nixrajput-EFF7F6?logo=Instagram&link=https://www.instagram.com/nixrajput)][instagram]
-[![Twitter: nixrajput07](https://img.shields.io/badge/nixrajput-EFF7F6?logo=X&logoColor=333&link=https://x.com/nixrajput)][twitter]
-[![Telegram: nixrajput](https://img.shields.io/badge/nixrajput-EFF7F6?logo=Telegram&link=https://telegram.me/nixrajput)][telegram]
-[![Gmail: nkr.nikhi.nkr@gmail.com](https://img.shields.io/badge/nkr.nikhil.nkr@gmail.com-EFF7F6?logo=Gmail&link=mailto:nkr.nikhil.nkr@gmail.com)][gmail]
+[![GitHub: niranjan012](https://img.shields.io/badge/NiranjanPanigrahi-EFF7F6?logo=GitHub&logoColor=333)][github]
+[![Linkedin: niranjanpanigrahi](https://img.shields.io/badge/NiranjanPanigrahi-EFF7F6?logo=LinkedIn&logoColor=blue&link=https://www.linkedin.com/in/niranjan-panigrahi-6b24621bb)][linkedin]
+[![Instagram: nixrajput](https://img.shields.io/badge/NiranjanPanigrahi-EFF7F6?logo=Instagram&link=https://www.instagram.com/niranjannpn)][instagram]
+[![Twitter: nixrajput07](https://img.shields.io/badge/NiranjanPanigrahi-EFF7F6?logo=X&logoColor=333&link=https://x.com/nixrajput)][twitter]
+<!-- [![Telegram: nixrajput](https://img.shields.io/badge/NiranjanPanigrahi-EFF7F6?logo=Telegram&link=https://telegram.me/nixrajput)][telegram] -->
+[![Gmail: niranjan.panigrahi99@gmail.com](https://img.shields.io/badge/niranjan.panigrahi99@gmail.com-EFF7F6?logo=Gmail&link=mailto:niranjan.panigrahi99@gmail.com)][gmail]
 
 ## Activities
 
 ![Alt](https://repobeats.axiom.co/api/embed/39717929794c9e56c46a4313ee2c33347cf209d1.svg "Repobeats analytics image")
 
-[github]: https://github.com/nixrajput
+[github]: https://github.com/Niranjan012
 [twitter]: https://twitter.com/nixrajput07
-[instagram]: https://instagram.com/nixrajput
-[linkedin]: https://linkedin.com/in/nixrajput
+[instagram]: https://www.instagram.com/niranjannpn
+[linkedin]: https://www.linkedin.com/in/niranjan-panigrahi-6b24621bb
 [telegram]: https://telegram.me/nixrajput
 [gmail]: mailto:nkr.nikhil.nkr@gmail.com
 [repo]: https://github.com/nixrajput/portfolio-nextjs

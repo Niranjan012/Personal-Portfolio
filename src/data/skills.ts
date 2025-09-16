@@ -81,26 +81,26 @@ const skills: ISkillListItem[] = [
       // },
     ],
   },
-  {
-    title: "Mobile App Development",
-    items: [
-      {
-        title: "Flutter",
-        level: SkillLevel.Expert,
-        icon: "/skills/flutter.svg",
-      },
-      {
-        title: "GetX",
-        level: SkillLevel.Expert,
-        icon: "/skills/getx.png",
-      },
-    ],
-  },
+  // {
+  //   title: "Mobile App Development",
+  //   items: [
+  //     {
+  //       title: "Flutter",
+  //       level: SkillLevel.Expert,
+  //       icon: "/skills/flutter.svg",
+  //     },
+  //     {
+  //       title: "GetX",
+  //       level: SkillLevel.Expert,
+  //       icon: "/skills/getx.png",
+  //     },
+  //   ],
+  // },
   {
     title: "Database Management",
     items: [
       {
-        title: "MongoDB",
+        title: "Azure Cosmos DB",
         level: SkillLevel.Intermediate,
         icon: "/skills/mongodb.svg",
       },
@@ -111,7 +111,7 @@ const skills: ISkillListItem[] = [
       },
       {
         title: "MySQL",
-        level: SkillLevel.Beginner,
+        level: SkillLevel.Intermediate,
         icon: "/skills/mysql.svg",
       },
     ],
