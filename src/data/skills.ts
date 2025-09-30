@@ -5,19 +5,29 @@ const skills: ISkillListItem[] = [
     title: "Programming Languages",
     items: [
       {
-        title: "JavaScript",
-        level: SkillLevel.Expert,
-        icon: "/skills/javascript.svg",
-      },
-      {
         title: "TypeScript",
         level: SkillLevel.Intermediate,
         icon: "/skills/typescript.svg",
       },
       {
-        title: "Dart",
+        title: "JavaScript",
         level: SkillLevel.Expert,
-        icon: "/skills/dart.svg",
+        icon: "/skills/javascript.svg",
+      },
+      {
+        title: "C#",
+        level: SkillLevel.Expert,
+        icon: "/skills/csharp.svg",
+      },
+      {
+        title: "Java",
+        level: SkillLevel.Expert,
+        icon: "/skills/java.svg",
+      },
+      {
+        title: "Python",
+        level: SkillLevel.Intermediate,
+        icon: "/skills/python.svg",
       },
     ],
   },
@@ -33,6 +43,11 @@ const skills: ISkillListItem[] = [
         title: "React.js",
         level: SkillLevel.Expert,
         icon: "/skills/react.svg",
+      },
+      {
+        title: "Angular",
+        level: SkillLevel.Expert,
+        icon: "/skills/angular.svg",
       },
       {
         title: "HTML",
@@ -60,12 +75,12 @@ const skills: ISkillListItem[] = [
     title: "Backend Development",
     items: [
       {
-        title: "Node.js",
+        title: ".NET",
         level: SkillLevel.Expert,
         icon: "/skills/nodejs.svg",
       },
       {
-        title: "Express.js",
+        title: "Spring boot",
         level: SkillLevel.Expert,
         icon: "/skills/express.svg",
       },
@@ -102,7 +117,7 @@ const skills: ISkillListItem[] = [
       {
         title: "Azure Cosmos DB",
         level: SkillLevel.Intermediate,
-        icon: "/skills/mongodb.svg",
+        icon: "/skills/cosmosdb.svg",
       },
       {
         title: "PostgreSQL",
@@ -125,9 +140,9 @@ const skills: ISkillListItem[] = [
         icon: "/skills/docker.png",
       },
       {
-        title: "AWS",
+        title: "Azure",
         level: SkillLevel.Intermediate,
-        icon: "/skills/aws.svg",
+        icon: "/skills/azure.svg",
       },
       {
         title: "Git",
@@ -135,27 +150,27 @@ const skills: ISkillListItem[] = [
         icon: "/skills/git.svg",
       },
       {
-        title: "GitHub",
+        title: "Azure DevOps",
         level: SkillLevel.Expert,
-        icon: "/skills/github.svg",
+        icon: "/skills/Azdevops.svg",
       },
     ],
   },
-  {
-    title: "Miscellaneous",
-    items: [
-      {
-        title: "Firebase",
-        level: SkillLevel.Intermediate,
-        icon: "/skills/firebase.svg",
-      },
-      {
-        title: "Ubuntu",
-        level: SkillLevel.Intermediate,
-        icon: "/skills/ubuntu.png",
-      },
-    ],
-  },
+  // {
+  //   title: "Miscellaneous",
+  //   items: [
+  //     {
+  //       title: "Firebase",
+  //       level: SkillLevel.Intermediate,
+  //       icon: "/skills/firebase.svg",
+  //     },
+  //     {
+  //       title: "Ubuntu",
+  //       level: SkillLevel.Intermediate,
+  //       icon: "/skills/ubuntu.png",
+  //     },
+  //   ],
+  // },
   {
     title: "Nontechnical Skills",
     items: [
