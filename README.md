@@ -2,15 +2,15 @@
 
 This repository contains the source code for a portfolio website built using Next.js and Sass. This README.md file provides an overview of the project and instructions on how to set it up and customize it for your own use.
 
-[![Stars](https://img.shields.io/github/stars/nixrajput/portfolio-nextjs?label=Stars&style=flat)][repo]
-[![Forks](https://img.shields.io/github/forks/nixrajput/portfolio-nextjs?label=Forks&style=flat)][repo]
-[![Watchers](https://img.shields.io/github/watchers/nixrajput/portfolio-nextjs?label=Watchers&style=flat)][repo]
-[![Contributors](https://img.shields.io/github/contributors/nixrajput/portfolio-nextjs?label=Contributors&style=flat)][repo]
+[![Stars](https://img.shields.io/github/stars/Niranjan012/Personal-Portfolio?label=Stars&style=flat)][repo]
+[![Forks](https://img.shields.io/github/forks/Niranjan012/Personal-Portfolio?label=Forks&style=flat)][repo]
+[![Watchers](https://img.shields.io/github/watchers/Niranjan012/Personal-Portfolio?label=Watchers&style=flat)][repo]
+[![Contributors](https://img.shields.io/github/contributors/Niranjan012/Personal-Portfolio?label=Contributors&style=flat)][repo]
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/nixrajput/portfolio-nextjs?label=Last+Commit&style=flat)][repo]
-[![GitHub issues](https://img.shields.io/github/issues/nixrajput/portfolio-nextjs?label=Issues&style=flat)][issues]
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/nixrajput/portfolio-nextjs?label=Pull+Requests&style=flat)][pulls]
-[![GitHub License](https://img.shields.io/github/license/nixrajput/portfolio-nextjs?label=License&style=flat)][license]
+[![GitHub last commit](https://img.shields.io/github/last-commit/Niranjan012/Personal-Portfolio?label=Last+Commit&style=flat)][repo]
+[![GitHub issues](https://img.shields.io/github/issues/Niranjan012/Personal-Portfolio?label=Issues&style=flat)][issues]
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/Niranjan012/Personal-Portfolio?label=Pull+Requests&style=flat)][pulls]
+[![GitHub License](https://img.shields.io/github/license/Niranjan012/Personal-Portfolio?label=License&style=flat)][license]
 
 ## Table of Contents
 
@@ -63,7 +63,7 @@ You need to have the following software installed on your computer:
 2. Clone this repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/nixrajput/portfolio-nextjs.git
+   git clone https://github.com/Niranjan012/Personal-Portfolio.git
    ```
 
 3. Navigate to the project directory:
@@ -136,22 +136,6 @@ If you would like to contribute to this project, feel free to fork the repositor
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Sponsor Me
-
-By sponsoring my efforts, you're not merely contributing to the development of my projects; you're investing in its growth and sustainability.
-
-Your support empowers me to dedicate more time and resources to improving the project's features, addressing issues, and ensuring its continued relevance in the rapidly evolving landscape of technology.
-
-Your sponsorship directly fuels innovation, fosters a vibrant community, and helps maintain the project's high standards of quality. Together, we can shape the future of the projects and make a lasting impact in the open-source community.
-
-Thank you for considering sponsoring my work!
-
-[![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/nixrajput)
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/nixrajput)
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/nixrajput)
-
 ## Connect With Me
 
 [![GitHub: niranjan012](https://img.shields.io/badge/NiranjanPanigrahi-EFF7F6?logo=GitHub&logoColor=333)][github]
@@ -166,12 +150,10 @@ Thank you for considering sponsoring my work!
 ![Alt](https://repobeats.axiom.co/api/embed/39717929794c9e56c46a4313ee2c33347cf209d1.svg "Repobeats analytics image")
 
 [github]: https://github.com/Niranjan012
-[twitter]: https://twitter.com/nixrajput07
 [instagram]: https://www.instagram.com/niranjannpn
 [linkedin]: https://www.linkedin.com/in/niranjan-panigrahi-6b24621bb
-[telegram]: https://telegram.me/nixrajput
-[gmail]: mailto:nkr.nikhil.nkr@gmail.com
-[repo]: https://github.com/nixrajput/portfolio-nextjs
-[issues]: https://github.com/nixrajput/portfolio-nextjs/issues
-[pulls]: https://github.com/nixrajput/portfolio-nextjs/pulls
-[license]: https://github.com/nixrajput/portfolio-nextjs/blob/master/LICENSE.md
+[gmail]: mailto:niranjan.panigrahi99@gmail.com
+[repo]: https://github.com/Niranjan012/Personal-Portfolio
+[issues]: https://github.com/Niranjan012/Personal-Portfolio/issues
+[pulls]: https://github.com/Niranjan012/Personal-Portfolio/pulls
+[license]: https://github.com/Niranjan012/Personal-Portfolio/blob/master/LICENSE.md
