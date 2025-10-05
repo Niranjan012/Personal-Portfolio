@@ -21,23 +21,23 @@ const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
               Hi there, I am
             </p>
             <FlipWords
-              words={["Niranjan Panigrahi.", "@niranjan012."]}
+              words={["Niranjan Panigrahi.", "a Software Engineer."]}
               className="text-2xl/normal sm:text-3xl/normal md:text-5xl/normal lg:text-6xl/normal xl:text-7xl/normal dark:text-[var(--primaryColor)] text-[var(--primaryColor)] font-bold text-center"
             />
           </div>
           <p className="text-sm/normal md:text-base/normal dark:text-[var(--textColorLight)] text-[var(--textColorLight)]">
-            Full Stack Developer 💻 SDE 🛠️ Open Source 🌍
+            Full Stack Developer 💻
           </p>
 
-          <div className="gap-4 mt-12 lg:mt-16 flex flex-col md:flex-row">
+          <div className="gap-4 mt-8 lg:mt-16 flex flex-col md:flex-row">
             <TalkButton />
           </div>
         </Column>
 
-        <div className="mt-12 lg:mt-16 w-full flex flex-col items-center">
-          <p className="text-base/6 font-medium">Follow me here</p>
+        {/* <div className="mt-12 lg:mt-10 w-full flex flex-col items-center">
+          <p className="text-base/6 font-medium"> Software Engineer with 2+ years of experience in end-to-end full-stack development, delivering scalable and high-performance enterprise applications. Skilled in frontend frameworks (Angular, React, Next.js), backend systems (.NET Core, Java), and Azure cloud services (DevOps, Key Vault, Storage Account). Experienced in API development and integration, system performance optimization, reusable UI component design, and legacy modernization. Adept at CI/CD automation and Agile collaboration to deliver secure, timely, and impactful solutions.</p> */}
 
-          <Row classNames="mt-2 gap-2">
+          {/* <Row classNames="mt-2 gap-2">
             {socialLinks.slice(0, 5).map((link, index) => {
               return (
                 <Link
@@ -55,8 +55,8 @@ const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
                 </Link>
               );
             })}
-          </Row>
-        </div>
+          </Row> */}
+        {/* </div> */}
       </ConstrainedBox>
     </ResponsiveBox>
   );
