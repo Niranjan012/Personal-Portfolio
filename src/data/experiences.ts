@@ -18,7 +18,7 @@ const experiences: IExperienceItem[] = [
     designation: "Software Developer",
     company: "MagTapp",
     startDate: "Dec 2022",
-    endDate: "Jan 2024",
+    endDate: "Aug 2024",
     isCurrentJob: false,
     location: "Bhubaneswar, India",
     description: [
