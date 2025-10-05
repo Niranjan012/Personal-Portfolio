@@ -20,11 +20,11 @@ const services: IServiceItem[] = [
     id: 2,
     title: "Web Development",
     icons: [
-      "/skills/redux.svg",
+      "/skills/angular.svg",
       "/skills/react.svg",
       "/skills/nextjs.png",
-      "/skills/html.svg",
-      "/skills/css.svg",
+      "/skills/typescript.svg",
+      "/skills/javascript.svg",
     ],
     shortDescription: "I build visually stunning and user-friendly websites.",
     description:
@@ -34,11 +34,11 @@ const services: IServiceItem[] = [
     id: 3,
     title: "Backend Development",
     icons: [
-      "/skills/socket-io.png",
-      "/skills/docker.png",
-      "/skills/nodejs.svg",
-      "/skills/express.svg",
-      "/skills/aws.svg",
+      "/skills/csharp.svg",
+      "/skills/dotnet.svg",
+      "/skills/java.svg",
+      "/skills/springboot.svg",
+      "/skills/azure.svg",
     ],
     shortDescription: "I create robust and scalable backend infrastructures.",
     description:
@@ -52,7 +52,6 @@ const services: IServiceItem[] = [
       "/images/collaboration.png",
       "/images/logical-thinking.png",
       "/images/analytical-skills.png",
-      "/skills/ubuntu.png",
     ],
     shortDescription:
       "I define goals, target audiences, and roadmap for success.",
@@ -65,8 +64,7 @@ const services: IServiceItem[] = [
     icons: [
       "/skills/docker.svg",
       "/skills/kubernetes.svg",
-      "/skills/aws.svg",
-      "/skills/jenkins.svg",
+      "/skills/Azdevops.svg",
       "/skills/terraform.svg",
     ],
     shortDescription: "I streamline development and operations processes.",
