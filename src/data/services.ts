@@ -38,7 +38,6 @@ const services: IServiceItem[] = [
       "/skills/dotnet.svg",
       "/skills/java.svg",
       "/skills/springboot.svg",
-      "/skills/azure.svg",
     ],
     shortDescription: "I create robust and scalable backend infrastructures.",
     description:
