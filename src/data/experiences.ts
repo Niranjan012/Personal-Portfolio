@@ -3,15 +3,16 @@ import { IExperienceItem } from "@/types";
 const experiences: IExperienceItem[] = [
   {
     designation: "Software Engineer",
-    company: "INTO Education PVT LTD",
+    company: "INTO University Partnerships",
     startDate: "Oct 2024",
     isCurrentJob: true,
     location: "Bengaluru, India",
     description: [
-      "Developed and enhanced microsites by implementing new UI components in a shared library (Storybook), improving code reusability and reducing development time.",
-      "Delivered features such as dashboard development, authentication workflows, and third-party API integrations, enabling seamless data retrieval and boosting customer engagement.",
-      "Optimized frontend performance through lazy loading, bundle minimization, and caching strategies, reducing page load times significantly.",
-      "Actively participated in Agile ceremonies (Sprint Planning, Standups, Retrospectives) and collaborated with cross-functional teams to deliver value-driven solutions within deadlines.",
+      "Led frontend modernization initiatives by upgrading Angular applications from v16 to v21, alongside Next.js 16, React 19, and Node.js upgrades, improving maintainability, performance, and long-term scalability of customer-facing B2B and B2C platforms.",
+      "Designed and developed scalable RESTful APIs using ASP.NET Core, implementing authentication and authorization mechanisms to securely support multi-tenant business workflows across global education partners and direct student users.",
+      "Built modular, component-driven Angular applications using TypeScript, RxJS, Reactive Forms, HTTP services, and NgRx (state management), ensuring high performance and consistent user experience across complex business flows.",
+      "Implemented CI/CD pipelines using Azure DevOps, integrating Azure Repos, automated builds, and deployments, enabling faster release cycles and improved reliability across development and production environments.",
+      "Worked extensively with Azure Cosmos DB (NoSQL) to design efficient data models and queries, optimizing API performance through caching strategies and reduced latency for high-traffic application endpoints.",
     ],
   },
   {
