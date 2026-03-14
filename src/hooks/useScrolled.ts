@@ -1,44 +1,32 @@
+// hooks/useScrolled.ts
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-const useScrolled = (offset?: number) => {
-  const [scrolled, setScrolled] = useState<boolean>(false);
+/**
+ * Custom hook for scroll position tracking
+ * Follows Single Responsibility Principle - only handles scroll state
+ */
+export const useScrolled = (threshold = 50) => {
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    let tempOffset = 40;
-    if (
-      !offset ||
-      offset < 0 ||
-      offset > window.innerHeight ||
-      typeof offset !== "number" ||
-      isNaN(offset) ||
-      !isFinite(offset) ||
-      offset === Infinity ||
-      offset === -Infinity ||
-      offset === 0 ||
-      offset === null ||
-      offset === undefined
-    ) {
-      tempOffset = 40;
-    }
-
     const handleScroll = () => {
-      if (window.scrollY > tempOffset) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setIsScrolled(window.scrollY > threshold);
     };
 
-    if (document.readyState === "complete") handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
-    window.addEventListener("scroll", handleScroll);
+    // Check initial scroll position
+    handleScroll();
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [offset]);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [threshold]);
 
-  return scrolled;
+  return isScrolled;
 };
 
+// Legacy export for backward compatibility
 export default useScrolled;

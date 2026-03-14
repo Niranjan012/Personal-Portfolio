@@ -1,15 +1,20 @@
+// hooks/useIsInViewport.ts
 "use client";
 
-import type { ViewportProps } from "@/types";
-import { useEffect, useState, useMemo, RefObject } from "react";
+import { useState, useEffect, useMemo, RefObject } from 'react';
+import { ViewportProps } from '@/types';
 
-const useInViewport = (
-  ref: RefObject<HTMLDataElement>,
+/**
+ * Custom hook for element viewport visibility detection
+ * Follows Single Responsibility Principle - only handles viewport visibility
+ */
+export const useIsInViewport = (
+  ref: RefObject<Element>,
   options?: ViewportProps
 ) => {
-  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [isIntersecting, setIsIntersecting] = useState(false);
 
-  const vOptions = useMemo(
+  const observerOptions = useMemo(
     () => ({
       root: options?.root,
       rootMargin: options?.rootMargin || "20px",
@@ -20,10 +25,11 @@ const useInViewport = (
 
   const observer = useMemo(
     () =>
-      new IntersectionObserver(([entry]) => {
-        setIsVisible(entry.isIntersecting);
-      }, vOptions),
-    [vOptions]
+      new IntersectionObserver(
+        ([entry]) => setIsIntersecting(entry.isIntersecting),
+        observerOptions
+      ),
+    [observerOptions]
   );
 
   useEffect(() => {
@@ -31,10 +37,15 @@ const useInViewport = (
 
     observer.observe(ref.current);
 
-    return () => observer.disconnect();
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
   }, [ref, observer]);
 
-  return isVisible;
+  return isIntersecting;
 };
 
-export default useInViewport;
+// Legacy export for backward compatibility
+export default useIsInViewport;

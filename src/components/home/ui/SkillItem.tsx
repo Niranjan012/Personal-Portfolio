@@ -1,10 +1,11 @@
+import { memo } from "react";
 import type { ISkillListItem } from "@/types";
 import Image from "next/image";
 import CardBox from "@/components/core/CardBox";
 import Row from "@/components/core/Row";
 import Column from "@/components/core/Column";
 
-const SkillItem = ({ data }: { data: ISkillListItem }) => {
+const SkillItem = memo(({ data }: { data: ISkillListItem }) => {
   return (
     <CardBox classNames="p-4 items-center justify-start rounded-[var(--borderRadius)] border border-[rgba(255,255,255,0.10)] dark:bg-[var(--primaryColor5)] bg-[var(--primaryColor5)] shadow-[2px_4px_16px_0px_rgba(100,100,100,0.06)_inset] w-full group">
       <p className="text-lg/6 font-semibold text-center">{data.title}</p>
@@ -23,7 +24,7 @@ const SkillItem = ({ data }: { data: ISkillListItem }) => {
                     alt={`logo-${skill.title}`}
                     width={144}
                     height={144}
-                    sizes="100%"
+                    sizes="(max-width: 1024px) 48px, 56px"
                     loading="lazy"
                     placeholder="blur"
                     blurDataURL="/images/logical-thinking.png"
@@ -39,6 +40,6 @@ const SkillItem = ({ data }: { data: ISkillListItem }) => {
       ) : null}
     </CardBox>
   );
-};
+});
 
 export default SkillItem;

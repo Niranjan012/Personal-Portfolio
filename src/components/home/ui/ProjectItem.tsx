@@ -1,5 +1,6 @@
 "use client";
 
+import { memo } from "react";
 import { RepoType, type IProjectItem } from "@/types";
 import { Balancer } from "react-wrap-balancer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +12,7 @@ import Column from "@/components/core/Column";
 import Row from "@/components/core/Row";
 import CardBox from "@/components/core/CardBox";
 
-const ProjectItem = ({ project }: { project: IProjectItem }) => {
+const ProjectItem = memo(({ project }: { project: IProjectItem }) => {
   return (
     <CardBox classNames="min-w-[calc(100%-2rem)] sm:min-w-[25rem] md:min-w-[28rem] aspect-[3/5] max-h-[30rem] p-4 gap-8 items-center justify-between rounded-[var(--borderRadius)] border border-[rgba(255,255,255,0.10)] dark:bg-[var(--primaryColor5)] bg-[var(--primaryColor5)] shadow-[2px_4px_16px_0px_rgba(100,100,100,0.06)_inset] group slide_in">
       <Column classNames="w-full items-center justify-start">
@@ -21,7 +22,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
             alt={`project-${project.title}`}
             width={100}
             height={100}
-            sizes="100%"
+            sizes="(max-width: 768px) 40px, 48px"
             loading="lazy"
             placeholder="blur"
             blurDataURL={project.icon}
@@ -96,6 +97,6 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
       </Column>
     </CardBox>
   );
-};
+});
 
 export default ProjectItem;

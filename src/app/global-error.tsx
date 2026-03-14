@@ -1,10 +1,10 @@
+// src/app/global-error.tsx
 "use client";
 
-import * as Sentry from "@sentry/nextjs";
 import NextError from "next/error";
 import { useEffect } from "react";
 
-const Error = ({
+const GlobalError = ({
   error,
   reset,
 }: {
@@ -12,7 +12,8 @@ const Error = ({
   reset: () => void;
 }) => {
   useEffect(() => {
-    Sentry.captureException(error);
+    // Replace with your own error logging service if needed
+    console.error(error);
   }, [error]);
 
   return (
@@ -48,4 +49,4 @@ const Error = ({
   );
 };
 
-export default Error;
+export default GlobalError;

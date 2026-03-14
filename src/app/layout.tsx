@@ -1,9 +1,11 @@
+// src/app/layout.tsx
 import "./globals.scss";
 import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
-import { navMenus } from "@/data/navMenus";
+import { Suspense } from "react";
+import { siteConfig } from "@/config/site.config";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -25,20 +27,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Niranjan Panigrahi",
-  description:
-    "Niranjan Panigrahi is a proficient Software Engineer and Full Stack Developer from India, skilled in front-end and back-end development using modern tech stacks.",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+  title: siteConfig.title,
+  description: siteConfig.description,
+  keywords: [...siteConfig.keywords],  // ✅ FIX 1 — spread removes readonly
   icons: [
     {
       url: "/favicon-16x16.ico",
@@ -65,18 +56,6 @@ export const metadata: Metadata = {
       type: "image/x-icon",
     },
   ],
-  keywords: [
-    "niranjan panigrahi",
-    "niranjan",
-    "nixpanigrahi",
-    "niranjan-panigrahi",
-    "panigrahi niranjan",
-    "founder of nixlab",
-    "nixlab founder",
-    "full stack developer",
-    "indian developer",
-    "nixpanigrahi github",
-  ],
 };
 
 const GoogleAnalytics = dynamic(
@@ -96,13 +75,28 @@ const isDebug = process.env.NODE_ENV === "development";
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <html lang="en" className={poppins.className}>
-      {isDebug ? null : <GoogleAnalytics />}
+      <Suspense fallback={null}>
+        {isDebug ? null : <GoogleAnalytics />}
+      </Suspense>
 
       <body className={isDebug ? "debug-screens" : ""}>
-        {isDebug ? <WebVitals /> : null}
-        <FloatingNavbar className="app_nav" navItems={navMenus} />
+        <Suspense fallback={null}>
+          {isDebug ? <WebVitals /> : null}
+        </Suspense>
+        <Suspense
+          fallback={
+            <div className="h-16 bg-gray-200 animate-pulse"></div>
+          }
+        >
+          <FloatingNavbar
+            className="app_nav"
+            navItems={[...siteConfig.navItems]}  // ✅ FIX 2 — spread removes readonly
+          />
+        </Suspense>
         <main>{children}</main>
-        <ScrollToTop />
+        <Suspense fallback={null}>
+          <ScrollToTop />
+        </Suspense>
       </body>
     </html>
   );
