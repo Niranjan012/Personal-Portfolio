@@ -1,3 +1,4 @@
+import React from "react";
 import ConstrainedBox from "@/components/core/constrained-box";
 import ResponsiveBox from "@/components/core/ResponsiveBox";
 import SectionTitle from "@/components/common/SectionTitle";
