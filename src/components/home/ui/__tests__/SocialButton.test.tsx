@@ -1,12 +1,13 @@
 import { render, screen } from "@testing-library/react";
-import SocialButton from "../ui/SocialButton";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import SocialButton from "../SocialButton";
 
 describe("SocialButton", () => {
   it("renders with text and icon", () => {
     render(
       <SocialButton
         text="GitHub"
-        icon="github-icon"
+        icon={faGithub}
         url="https://github.com"
       />
     );
@@ -18,7 +19,7 @@ describe("SocialButton", () => {
     render(
       <SocialButton
         text="GitHub"
-        icon="github-icon"
+        icon={faGithub}
         url="https://github.com"
       />
     );

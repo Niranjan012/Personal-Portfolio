@@ -22,4 +22,6 @@ const HomeSection5 = memo(({ id }: { id: string }) => {
   );
 });
 
+HomeSection5.displayName = 'HomeSection5';
+
 export default HomeSection5;

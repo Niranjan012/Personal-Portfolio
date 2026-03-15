@@ -42,4 +42,6 @@ const SkillItem = memo(({ data }: { data: ISkillListItem }) => {
   );
 });
 
+SkillItem.displayName = 'SkillItem';
+
 export default SkillItem;

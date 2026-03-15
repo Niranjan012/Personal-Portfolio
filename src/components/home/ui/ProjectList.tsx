@@ -1,13 +1,13 @@
 "use client";
 
-import { createRef, memo, useCallback, useMemo } from "react";
+import { memo, useCallback, useMemo, useRef } from "react";
 import { IProjectItem } from "@/types";
 import Row from "@/components/core/Row";
 import ProjectItem from "./ProjectItem";
 import Column from "@/components/core/Column";
 
 const ProjectList = memo(({ projects }: Readonly<{ projects: IProjectItem[] }>) => {
-  const carouselRef = createRef<HTMLDivElement>();
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   const _handleOnClickPrev = useCallback(() => {
     if (!carouselRef || carouselRef.current === null) return;
@@ -16,7 +16,7 @@ const ProjectList = memo(({ projects }: Readonly<{ projects: IProjectItem[] }>) 
     if (window.innerWidth < 480) offset = 280;
 
     carouselRef.current.scrollLeft -= offset;
-  }, [carouselRef]);
+  }, []);
 
   const _handleOnClickNext = useCallback(() => {
     if (!carouselRef || carouselRef.current === null) return;
@@ -25,7 +25,7 @@ const ProjectList = memo(({ projects }: Readonly<{ projects: IProjectItem[] }>) 
     if (window.innerWidth < 480) offset = 280;
 
     carouselRef.current.scrollLeft += offset;
-  }, [carouselRef]);
+  }, []);
 
   const projectItems = useMemo(() =>
     projects.map((item, index) => (
@@ -44,5 +44,7 @@ const ProjectList = memo(({ projects }: Readonly<{ projects: IProjectItem[] }>) 
     </Column>
   );
 });
+
+ProjectList.displayName = 'ProjectList';
 
 export default ProjectList;

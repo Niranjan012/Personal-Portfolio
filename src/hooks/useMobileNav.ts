@@ -12,6 +12,13 @@ export const useMobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
+  const close = useCallback(() => {
+    if (isAnimating || !isOpen) return;
+    setIsAnimating(true);
+    setIsOpen(false);
+    setTimeout(() => setIsAnimating(false), 300);
+  }, [isAnimating, isOpen]);
+
   // Check if device is mobile
   useEffect(() => {
     const handleResize = () => {
@@ -36,7 +43,7 @@ export const useMobileNav = () => {
       window.removeEventListener("load", handleResize);
       window.removeEventListener("resize", handleResize);
     };
-  }, [isMobile, isOpen]);
+  }, [isMobile, isOpen, close]);
 
   const toggle = useCallback(() => {
     if (isAnimating) return;
@@ -52,13 +59,6 @@ export const useMobileNav = () => {
     if (isAnimating || isOpen) return;
     setIsAnimating(true);
     setIsOpen(true);
-    setTimeout(() => setIsAnimating(false), 300);
-  }, [isAnimating, isOpen]);
-
-  const close = useCallback(() => {
-    if (isAnimating || !isOpen) return;
-    setIsAnimating(true);
-    setIsOpen(false);
     setTimeout(() => setIsAnimating(false), 300);
   }, [isAnimating, isOpen]);
 

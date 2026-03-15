@@ -27,4 +27,6 @@ const ExperienceItem = memo(({ data }: { data: IExperienceItem }) => {
   );
 });
 
+ExperienceItem.displayName = 'ExperienceItem';
+
 export default ExperienceItem;

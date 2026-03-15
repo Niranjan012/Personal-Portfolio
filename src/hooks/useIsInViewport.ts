@@ -35,12 +35,11 @@ export const useIsInViewport = (
   useEffect(() => {
     if (!ref || !ref.current) return;
 
-    observer.observe(ref.current);
+    const currentRef = ref.current;
+    observer.observe(currentRef);
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
+      observer.unobserve(currentRef);
     };
   }, [ref, observer]);
 

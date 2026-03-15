@@ -24,5 +24,17 @@ const projects: IProjectItem[] = [
     url: "",
     tags: ["Next.js", "Sass", "Web Development"],
   },
+  {
+    id: "employee-portal",
+    title: "Employee Website",
+    description:
+      "This repository contains the source code for a Employee portal website built using .NET Core and Angular.",
+    icon: "/skills/angular.svg",
+    repoType: RepoType.Public,
+    projectType: ProjectType.Personal,
+    githubUrl: "https://github.com/Niranjan012/Personal-Portfolio",
+    url: "",
+    tags: ["Angular", "NET Core", "MongoDB", "Web Development"],
+  },
 ];
 export default projects;
