@@ -5,10 +5,10 @@ const TalkButton = () => {
   return (
     <Link
       className="app__filled_btn min-w-[10rem]"
-      href={Strings.linkedInLink}
+      href={Strings.resumeLink}
       target="_blank"
     >
-      Let&apos;s Talk
+      Download Resume
     </Link>
   );
 };

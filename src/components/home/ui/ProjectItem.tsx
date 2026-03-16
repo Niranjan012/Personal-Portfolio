@@ -1,7 +1,6 @@
 "use client";
 
 import { RepoType, type IProjectItem } from "@/types";
-import { Balancer } from "react-wrap-balancer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
@@ -12,8 +11,14 @@ import Row from "@/components/core/Row";
 import CardBox from "@/components/core/CardBox";
 
 const ProjectItem = ({ project }: { project: IProjectItem }) => {
+  const cardClassName = "min-w-[calc(100%-2rem)] sm:min-w-[25rem] md:min-w-[28rem] aspect-[3/5] max-h-[30rem] p-4 gap-8 items-center justify-between rounded-[var(--borderRadius)] border border-[rgba(255,255,255,0.10)] dark:bg-[var(--primaryColor5)] bg-[var(--primaryColor5)] shadow-[2px_4px_16px_0px_rgba(100,100,100,0.06)_inset] group slide_in";
+
+  const repoTypeClassName = project.repoType === RepoType.Private
+    ? "text-[var(--errorColor)] border-[var(--errorColor50)]"
+    : "text-[var(--successColor)] border-[var(--successColor50)]";
+
   return (
-    <CardBox classNames="min-w-[calc(100%-2rem)] sm:min-w-[25rem] md:min-w-[28rem] aspect-[3/5] max-h-[30rem] p-4 gap-8 items-center justify-between rounded-[var(--borderRadius)] border border-[rgba(255,255,255,0.10)] dark:bg-[var(--primaryColor5)] bg-[var(--primaryColor5)] shadow-[2px_4px_16px_0px_rgba(100,100,100,0.06)_inset] group slide_in">
+    <CardBox classNames={cardClassName}>
       <Column classNames="w-full items-center justify-start">
         <Row classNames="w-[2.5rem] md:w-[3rem] aspect-square items-center justify-center">
           <Image
@@ -21,7 +26,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
             alt={`project-${project.title}`}
             width={100}
             height={100}
-            sizes="100%"
+            sizes="48px"
             loading="lazy"
             placeholder="blur"
             blurDataURL={project.icon}
@@ -32,11 +37,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
         <p className="text-lg/6 font-semibold mt-4">{project.title}</p>
 
         <div
-          className={`flex flex-row items-center justify-center rounded-full py-[0.05] px-[0.5rem] mt-4 capitalize text-center border ${
-            project.repoType === RepoType.Private
-              ? "text-[var(--errorColor)] border-[var(--errorColor50)]"
-              : "text-[var(--successColor)] border-[var(--successColor50)]"
-          }`}
+          className={"flex flex-row items-center justify-center rounded-full py-[0.05] px-[0.5rem] mt-4 capitalize text-center border " + repoTypeClassName}
         >
           <p className="text-xs/6 font-semibold">
             {project.repoType === RepoType.Private ? "Private" : "Public"}
@@ -76,10 +77,10 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
 
       <Column classNames="w-full items-center">
         <p className="text-center text-base/6">
-          <Balancer>{project.description}</Balancer>
+          {project.description}
         </p>
 
-        {project.tags && project.tags.length > 0 ? (
+        {project.tags && project.tags.length > 0 && (
           <Row classNames="w-full items-center justify-center flex-wrap mt-4">
             {project.tags.map((tag, i) => {
               return (
@@ -92,7 +93,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
               );
             })}
           </Row>
-        ) : null}
+        )}
       </Column>
     </CardBox>
   );

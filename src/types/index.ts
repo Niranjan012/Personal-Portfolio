@@ -1,4 +1,10 @@
-import { IconDefinition, IconProp } from "@fortawesome/fontawesome-svg-core";
+// Re-export all types for easy importing
+export * from './domain';
+export * from './api';
+export * from './components';
+
+// Legacy types (keeping for backward compatibility during migration)
+import type { IconDefinition, IconProp } from "@fortawesome/fontawesome-svg-core";
 import type { MouseEventHandler, ReactNode, RefObject } from "react";
 
 export interface INavMenuItem {

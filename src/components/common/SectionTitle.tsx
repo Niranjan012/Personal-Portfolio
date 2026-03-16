@@ -1,8 +1,15 @@
-const SectionTitle = ({ children }: Readonly<{ children: string }>) => {
+type SectionTitleProps = {
+  children: string;
+  className?: string;
+};
+
+const SectionTitle = ({ children, className = "" }: SectionTitleProps) => {
   return (
-    <p className="text-center mx-auto text-3xl/6 md:text-4xl/6 font-bold">
+    <h2
+      className={`block text-center mx-auto text-3xl md:text-4xl font-bold ${className}`}
+    >
       {children}
-    </p>
+    </h2>
   );
 };
 

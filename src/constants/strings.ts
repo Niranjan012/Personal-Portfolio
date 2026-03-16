@@ -11,6 +11,10 @@ class Strings {
   static linkedInLink = "https://www.linkedin.com/in/niranjan-panigrahi-6b24621bb/";
   static linkedInUsername = "Niranjan";
 
+  static resume = "LinkedIn";
+  static resumeLink = "https://drive.google.com/file/d/1M_04vX1AJPYejnvH2Ab9GPTR6PVfClWI/view?usp=sharing";
+  static resumeUsername = "Niranjan";
+
   static instagram = "Instagram";
   static instagramLink = "https://www.instagram.com/niranjannpn/";
   static instagramUsername = "niranjannpn";
