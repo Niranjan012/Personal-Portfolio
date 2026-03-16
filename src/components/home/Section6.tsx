@@ -9,7 +9,7 @@ import SectionTitle from "@/components/common/SectionTitle";
 import SocialButton from "./ui/SocialButton";
 import socialLinks from "@/data/socialLinks";
 
-const HomeSection6 = memo(({ id }: { id: string }) => {
+const HomeSection6 = memo<React.FC<{ id: string }>>(({ id }: { id: string }) => {
   const socialButtons = useMemo(() =>
     socialLinks.map((link, index) => (
       <SocialButton

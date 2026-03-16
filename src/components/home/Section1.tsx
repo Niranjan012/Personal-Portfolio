@@ -17,7 +17,7 @@ import ViewWorkButton from "./ui/ViewWorkButton";
 import ConnectButton from "./ui/ConnectButton";
 import { motion } from "framer-motion";
 
-const HomeSection1 = memo(({ id }: Readonly<{ id: string }>) => {
+const HomeSection1 = memo<React.FC<{ id: string }>>(({ id }: Readonly<{ id: string }>) => {
   const containerVariants = useMemo(() => ({
     hidden: { opacity: 0 },
     visible: {

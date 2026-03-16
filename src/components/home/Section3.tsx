@@ -8,7 +8,7 @@ import { Timeline } from "@/components/common/timeline";
 import ExperienceItem from "./ui/ExperienceItem";
 import experiences from "@/data/experiences";
 
-const HomeSection3 = memo(({ id }: { id: string }) => {
+const HomeSection3 = memo<React.FC<{ id: string }>>(({ id }: { id: string }) => {
   const timelineData = useMemo(() =>
     experiences.map((exp, i) => ({
       title: exp.startDate + " - " + (exp.endDate || "Present"),

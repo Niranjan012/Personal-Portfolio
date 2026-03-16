@@ -8,7 +8,7 @@ import SectionTitle from "@/components/common/SectionTitle";
 import SkillItem from "./ui/SkillItem";
 import skills from "@/data/skills";
 
-const HomeSection4 = memo(({ id }: { id: string }) => {
+const HomeSection4 = memo<React.FC<{ id: string }>>(({ id }: { id: string }) => {
   const skillItems = useMemo(() =>
     skills.map((skill, index) => (
       <SkillItem key={`skill-${index}`} data={skill} />

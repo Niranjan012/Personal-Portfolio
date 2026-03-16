@@ -7,7 +7,7 @@ import SectionTitle from "@/components/common/SectionTitle";
 import ProjectList from "./ui/ProjectList";
 import projects from "@/data/projects";
 
-const HomeSection5 = memo(({ id }: { id: string }) => {
+const HomeSection5 = memo<React.FC<{ id: string }>>(({ id }: { id: string }) => {
   return (
     <ResponsiveBox
       classNames="dark:bg-[var(--bgColor)] bg-[var(--bgColor)] dark:bg-grid-white/[0.1] bg-grid-white/[0.1] items-center justify-center py-12 md:py-16 lg:py-20"

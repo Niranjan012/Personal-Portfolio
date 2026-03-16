@@ -5,7 +5,7 @@ import SectionTitle from "@/components/common/SectionTitle";
 import { HoverLayoutGrid } from "@/components/common/HoverLayoutGrid";
 import services from "@/data/services";
 
-const HomeSection2 = ({ id }: { id: string }) => {
+const HomeSection2: React.FC<{ id: string }> = ({ id }) => {
   return (
     <ResponsiveBox
       classNames="dark:bg-[var(--dialogColor)] bg-[var(--dialogColor)] items-center justify-center dark:bg-dot-white/[0.15] bg-dot-white/[0.15] rounded-md py-12 md:py-16 lg:py-20"
